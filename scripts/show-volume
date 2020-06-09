@@ -1,0 +1,3 @@
+#!/bin/bash
+
+pactl list sinks | grep 'Volume: front-left' | awk '{print $5}' | sed 's/%//'

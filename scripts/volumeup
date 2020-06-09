@@ -1,0 +1,5 @@
+#!/bin/bash
+
+if [ $(show-volume) -lt 100 ]; then
+	pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +5%
+fi
