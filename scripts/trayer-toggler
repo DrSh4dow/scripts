@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if pgrep -x "trayer" > /dev/null
+then
+	killall trayer
+else
+        trayer --edge top --align right --width 25 --transparent true --tint 0x000000 --alpha 40 --padding 8 & 
+fi
+
+
+
